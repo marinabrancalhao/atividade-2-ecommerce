@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/estilizacao-padrao.css" />
+    <link rel="stylesheet" href="./styles/carrinho.css" />
+    <title>Cesta de Compras</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <section class="header__top">
+          <a href="./index.html"
+            ><img
+              class="header_logo"
+              src="./images/logotipo.png"
+              alt="Logotipo da marca Clique & Colha"
+              width="200"
+            />
+          </a>
+          <div class="header__search">
+            <img src="./images/icons8-search-24.png" alt="Pesquisar" />
+            <input type="text" placeholder="Pesquisar" />
+          </div>
+
+          <div>
+            <ul class="header__icons-list">
+              <li class="header__icons-item">
+                <a href="./login.html">
+                  <img
+                    src="./images/icons8-user-24.png"
+                    title="Minha conta"
+                    alt="Usuário"
+                  />
+                </a>
+              </li>
+              <li class="header__icons-item">
+                <a href="./carrinho.html">
+                  <img
+                    src="./images/icons8-basket-24.png"
+                    title="Minha cesta"
+                    alt="Cesta"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="header__categories">
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="index.html">Início</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="frutas.html">Frutas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="vegetais.html">Vegetais</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="bebidas.html">Bebidas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main class="basket">
+      <section class="basket__items">
+        <h2 class="basket__title">Cesta de Compras</h2>
+        <div class="basket-item">
+          <img src="./images/alface.png" class="basket-item__image" />
+
+          <div class="basket-item__details">
+            <h3>Alface</h3>
+            <span>R$ 7,50 <small>/un</small></span>
+          </div>
+
+          <div class="basket-item__quantity">
+            <button class="basket-item__button">
+              <img src="./images/icons8-minus-24.png" alt="" />
+            </button>
+            <span>1</span>
+            <button class="basket-item__button">
+              <img src="./images/icons8-plus-24.png" alt="" />
+            </button>
+          </div>
+
+          <span class="basket-item__total-price">R$ 7,50</span>
+
+          <button class="basket-item__remove">
+            <img src="./images/icons8-trash-24.png" alt="" />
+          </button>
+        </div>
+
+        <div class="basket-item">
+          <img src="./images/tomate.png" class="basket-item__image" />
+
+          <div class="basket-item__details">
+            <h3>Tomate</h3>
+            <span>R$ 14,00<small>/kg</small></span>
+          </div>
+
+          <div class="basket-item__quantity">
+            <button class="basket-item__button">
+              <img src="./images/icons8-minus-24.png" alt="" />
+            </button>
+            <span>1</span>
+            <button class="basket-item__button">
+              <img src="./images/icons8-plus-24.png" alt="" />
+            </button>
+          </div>
+
+          <span class="basket-item__total-price">R$ 14,00</span>
+
+          <button class="basket-item__remove">
+            <img src="./images/icons8-trash-24.png" alt="" />
+          </button>
+        </div>
+
+        <div class="basket-item">
+          <img src="./images/cenoura.png" class="basket-item__image" />
+
+          <div class="basket-item__details">
+            <h3>Cenoura</h3>
+            <span>R$ 10,50 <small>/kg</small></span>
+          </div>
+
+          <div class="basket-item__quantity">
+            <button class="basket-item__button">
+              <img src="./images/icons8-minus-24.png" alt="" />
+            </button>
+            <span>1</span>
+            <button class="basket-item__button">
+              <img src="./images/icons8-plus-24.png" alt="" />
+            </button>
+          </div>
+
+          <span class="basket-item__total-price">R$ 10,50</span>
+
+          <button class="basket-item__remove">
+            <img src="./images/icons8-trash-24.png" alt="" />
+          </button>
+        </div>
+
+        <div class="basket-item">
+          <img src="./images/manga.png" class="basket-item__image" />
+
+          <div class="basket-item__details">
+            <h3>Manga</h3>
+            <span>R$ 12,00 <small>/kg</small></span>
+          </div>
+
+          <div class="basket-item__quantity">
+            <button class="basket-item__button">
+              <img src="./images/icons8-minus-24.png" alt="" />
+            </button>
+            <span>1</span>
+            <button class="basket-item__button">
+              <img src="./images/icons8-plus-24.png" alt="" />
+            </button>
+          </div>
+
+          <span class="basket-item__total-price">R$ 12,00</span>
+
+          <button class="basket-item__remove">
+            <img src="./images/icons8-trash-24.png" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="basket__summary">
+        <span class="basket__coupon">
+          <input
+            class="basket__input"
+            id="coupon"
+            type="text"
+            placeholder="Adicione um cupom de desconto"
+          />
+
+          <button class="btn btn--subscription">OK</button></span
+        >
+        <h2 class="basket__summary-title">Resumo da Cesta</h2>
+
+        <div class="basket__summary-line">
+          <span> Itens (<span id="basket__count">4</span>) </span>
+          <span class="basket__value">R$ 44,00</span>
+        </div>
+
+        <div class="basket__summary-line">
+          <span>Desconto</span>
+          <span class="basket__value">- R$ 8,80</span>
+        </div>
+
+        <div class="basket__summary-line">
+          <span>Frete</span>
+          <span class="basket__value">R$ 10,00</span>
+        </div>
+
+        <div class="basket__summary-total">
+          <span>Total</span>
+          <span class="basket__total-value">R$ 45,20</span>
+        </div>
+
+        <button class="btn btn--basket">Finalizar compra</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small
+        ><p>&copy; 2026 Clique & Colha</p>
+        <p>Desenvolvido por Marina Brancalhão</p></small
+      >
+    </footer>
+  </body>
+</html>

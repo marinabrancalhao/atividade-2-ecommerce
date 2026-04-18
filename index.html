@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/estilizacao-padrao.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/produtos.css" />
+    <title>Clique & Colha</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <section class="header__top">
+          <a href="./index.html"
+            ><img
+              class="header__logo"
+              src="./images/logotipo.png"
+              alt="Logotipo da marca Clique & Colha"
+              width="200"
+            />
+          </a>
+          <div class="header__search">
+            <img src="./images/icons8-search-24.png" alt="" />
+            <input type="text" placeholder="Pesquisar" />
+          </div>
+
+          <div>
+            <ul class="header__icons-list">
+              <li class="header__icons-item">
+                <a href="./login.html">
+                  <img
+                    src="./images/icons8-user-24.png"
+                    title="Minha conta"
+                    alt="Minha conta"
+                  />
+                </a>
+              </li>
+              <li class="header__icons-item">
+                <a href="./carrinho.html">
+                  <img
+                    src="./images/icons8-basket-24.png"
+                    title="Minha cesta"
+                    alt="Cesta"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="header__categories">
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="index.html">Início</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="frutas.html">Frutas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="vegetais.html">Vegetais</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="bebidas.html">Bebidas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subscription">
+        <div class="subscription__content">
+          <h2>Os melhores Produtos</h2>
+          <h1>Orgânicos online</h1>
+          <p class="subscription__text">
+            Ganhe 20% de desconto na primeira compra!
+          </p>
+          <div class="subscription__email">
+            <input
+              class="subscription__input"
+              type="email"
+              placeholder="Insira seu email aqui"
+            />
+            <button class="btn btn--subscription">Inscrever</button>
+          </div>
+        </div>
+
+        <img
+          class="subscription__image"
+          src="./images/photo-banner.png"
+          alt="Cesta de palha com frutas e legumes"
+        />
+      </section>
+
+      <section class="categories">
+        <div class="categories__card">
+          <a class="categories__link-img" href="./frutas.html">
+            <div class="categories__bg">
+              <img
+                class="categories__img"
+                src="./images/icons8-strawberry-100.png"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a class="categories__link-name" href="./frutas.html"
+            ><h2 class="categories__name">Frutas</h2></a
+          >
+        </div>
+
+        <div class="categories__card">
+          <a class="categories__link-img" href="./vegetais.html">
+            <div class="categories__bg">
+              <img
+                class="categories__img"
+                src="./images/icons8-broccoli-100.png"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a class="categories__link-name" href="./vegetais.html"
+            ><h2 class="categories__name">Vegetais</h2></a
+          >
+        </div>
+
+        <div class="categories__card">
+          <a class="categories__link-img" href="./bebidas.html">
+            <div class="categories__bg">
+              <img
+                class="categories__img"
+                src="./images/icons8-orange-juice-100.png"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a class="categories__link-name" href="./bebidas.html"
+            ><h2 class="categories__name">Bebidas</h2></a
+          >
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/abacate.png"
+            alt="Abacate"
+          />
+          <div class="products__info">
+            <h3>Abacate</h3>
+            <p class="products__price">R$ 12,50 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img class="products__image" src="./images/manga.png" alt="Manga" />
+          <div class="products__info">
+            <h3>Manga</h3>
+            <p class="products__price">R$ 12,00 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/abacaxi.png"
+            alt="Abacaxi"
+          />
+          <div class="products__info">
+            <h3>Abacaxi</h3>
+            <p class="products__price">R$ 9,50 <small>/un</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/morango.png"
+            alt="Morango"
+          />
+          <div class="products__info">
+            <h3>Morango</h3>
+            <p class="products__price">R$ 18,00 <small>/cx</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/laranja.png"
+            alt="Laranja"
+          />
+          <div class="products__info">
+            <h3>Laranja</h3>
+            <p class="products__price">R$ 13,00 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img class="products__image" src="./images/alface.png" alt="Alface" />
+          <div class="products__info">
+            <h3>Alface</h3>
+            <p class="products__price">R$ 7,50 <small>/un</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img class="products__image" src="./images/tomate.png" alt="Tomate" />
+          <div class="products__info">
+            <h3>Tomate</h3>
+            <p class="products__price">R$ 14,00 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/cenoura.png"
+            alt="Cenoura"
+          />
+          <div class="products__info">
+            <h3>Cenoura</h3>
+            <p class="products__price">R$ 10,50 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img class="products__image" src="./images/batata.png" alt="Batata" />
+          <div class="products__info">
+            <h3>Batata</h3>
+            <p class="products__price">R$ 11,00 <small>/kg</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+
+        <div class="products__card">
+          <img
+            class="products__image"
+            src="./images/brocolis.png"
+            alt="Brócolis"
+          />
+          <div class="products__info">
+            <h3>Brócolis</h3>
+            <p class="products__price">R$ 12,00 <small>/un</small></p>
+          </div>
+
+          <button class="btn btn--add">
+            <img
+              src="./images/icons8-add-to-shopping-basket-24.png"
+              alt=""
+            />Adicionar à cesta
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small
+        ><p>&copy; 2026 Clique & Colha</p>
+        <p>Desenvolvido por Marina Brancalhão</p></small
+      >
+    </footer>
+  </body>
+</html>

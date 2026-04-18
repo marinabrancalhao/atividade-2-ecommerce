@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/estilizacao-padrao.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>Entrar</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <section class="header__top">
+          <a href="./index.html"
+            ><img
+              class="header_logo"
+              src="./images/logotipo.png"
+              alt="Logotipo da marca Clique & Colha"
+              width="200"
+            />
+          </a>
+          <div class="header__search">
+            <img src="./images/icons8-search-24.png" alt="" />
+            <input type="text" placeholder="Pesquisar" />
+          </div>
+
+          <div>
+            <ul class="header__icons-list">
+              <li class="header__icons-item">
+                <a href="./login.html">
+                  <img
+                    src="./images/icons8-user-24.png"
+                    title="Minha conta"
+                    alt="Minha conta"
+                  />
+                </a>
+              </li>
+              <li class="header__icons-item">
+                <a href="./carrinho.html">
+                  <img
+                    src="./images/icons8-basket-24.png"
+                    title="Minha cesta"
+                    alt="Cesta"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="header__categories">
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="index.html">Início</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="frutas.html">Frutas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="vegetais.html">Vegetais</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="bebidas.html">Bebidas</a>
+            </li>
+            <li class="header__categories-item">
+              <a href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h2 class="banner__title">Que bom que você chegou!</h2>
+      </section>
+
+      <section class="login">
+        <h1 class="login__title">Faça seu login</h1>
+        <form class="login__details" action="">
+          <label for="login__email">Email</label>
+          <input
+            class="login__input"
+            id="login__email"
+            type="email"
+            name="email"
+            placeholder="seuemail@email.com"
+          />
+          <label for="login__senha">Senha</label>
+          <input
+            class="login__input"
+            id="login__senha"
+            type="password"
+            name="senha"
+            placeholder="Sua senha"
+          />
+        </form>
+
+        <button class="btn btn--submit" type="submit">Entrar</button>
+
+        <p class="login__new">
+          Não tem conta ainda? <a href="./cadastrar.html">Crie agora</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small
+        ><p>&copy; 2026 Clique & Colha</p>
+        <p>Desenvolvido por Marina Brancalhão</p></small
+      >
+    </footer>
+  </body>
+</html>

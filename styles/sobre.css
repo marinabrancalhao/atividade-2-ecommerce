@@ -1,0 +1,34 @@
+/* Estilização do About */
+main {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+.about h2 {
+  font-family: "Coustard", serif;
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about__slogan {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about {
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 12px;
+  color: var(--surface-color);
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+}

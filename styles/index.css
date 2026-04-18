@@ -1,0 +1,148 @@
+/* Estilização da Section Subscription */
+.subscription {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--accent-color);
+  margin: 2rem 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.subscription__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.subscription__content h1 {
+  font-size: 3rem;
+  color: var(--surface-color);
+  font-family: "Coustard", serif;
+}
+
+.subscription__content h2 {
+  font-size: 3rem;
+  color: var(--bg-color);
+  font-family: "Coustard", serif;
+}
+
+.subscription__text {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.subscription__email {
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+.subscription__image {
+  max-width: 40%;
+  height: auto;
+}
+
+.subscription__input {
+  display: flex;
+  width: 100%;
+  padding: 1.2rem;
+  padding-right: 130px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Estilização da Section Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.categories__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categories__link-img {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.categories__bg {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.categories__img {
+  height: 60px;
+  width: auto;
+}
+
+.categories__link-name {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* Media Query da Section Subscription */
+  .subscription {
+    flex-direction: column-reverse;
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .subscription__content h1,
+  .subscription__content h2 {
+    font-size: 2.5rem;
+  }
+
+  .subscription__text {
+    font-size: 1.4rem;
+  }
+
+  .subscription__image {
+    max-width: 70%;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .subscription__input {
+    padding: 0.8rem;
+    font-size: 14px;
+  }
+
+  /* Media Query da Section Categories */
+  .categories {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .categories__img {
+    height: 40px;
+    width: auto;
+  }
+
+  .categories__link-name {
+    font-size: 0.6rem;
+  }
+}

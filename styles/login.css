@@ -1,0 +1,104 @@
+main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+/* Estilização da section banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/banner-image.png);
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 45%;
+}
+
+.banner__title {
+  color: var(--accent-color);
+  font-family: "Coustard", serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+}
+
+/* Estilização da section login */
+.login {
+  padding: 2rem 2rem 0 2rem;
+  background-color: var(--accent-color);
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  color: var(--bg-color);
+}
+
+.login__details {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0 2rem;
+  width: 90%;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.login__input {
+  padding: 0.8rem;
+  margin: 0.5rem 1rem 1rem 1rem;
+  width: 90%;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.login__new {
+  color: var(--surface-color);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.login__new a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+
+  .banner,
+  .login {
+    width: 100%;
+  }
+
+  .banner {
+    height: 60vh;
+    background-position: top;
+    justify-content: end;
+  }
+
+  .banner__title {
+    width: 100%;
+  }
+
+  .login {
+    height: auto;
+    padding: 3rem;
+  }
+}

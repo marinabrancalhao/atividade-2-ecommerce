@@ -1,0 +1,87 @@
+main {
+  display: flex;
+  padding: 1rem;
+}
+
+/* Estilização da section banner */
+.banner {
+  display: flex;
+  width: 40%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/register-banner.png);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 3rem;
+  font-family: "Coustard", serif;
+  color: var(--surface-color);
+  font-size: 26px;
+}
+
+/* Estilização da section register */
+.register {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  width: 60%;
+  padding: 2rem;
+}
+
+.register__title {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register__form button {
+  width: 30%;
+  align-self: center;
+}
+
+.register__line {
+  display: flex;
+  gap: 2rem;
+}
+
+.register__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.register__label {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.register__input {
+  padding: 0.5rem 0.8rem;
+  font-size: 16px;
+  border-radius: 40px;
+  border: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .banner {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .register {
+    width: 100%;
+  }
+}
