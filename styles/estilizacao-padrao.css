@@ -119,7 +119,11 @@ input:focus {
   background-color: var(--primary-color);
   color: var(--surface-color);
   padding: 0 1.3rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn--subscription:hover {
+  background-color: #6b863c;
 }
 
 .btn--add {
@@ -130,6 +134,10 @@ input:focus {
   color: var(--surface-color);
   margin: auto;
   font-size: 0.8rem;
+}
+
+.btn--add:hover {
+  background-color: #de805a;
 }
 
 .btn--add img {
@@ -146,6 +154,10 @@ input:focus {
   margin-top: 2rem;
 }
 
+.btn--submit:hover {
+  background-color: #6b863c;
+}
+
 .btn--basket {
   align-self: center;
   margin-top: 2rem;
@@ -153,6 +165,10 @@ input:focus {
   color: var(--surface-color);
   font-size: 1rem;
   font-weight: 700;
+}
+
+.btn--basket:hover {
+  background-color: #6b863c;
 }
 
 /* Media Query */
