@@ -190,7 +190,7 @@ input:focus {
   }
 
   .header__icons-list {
-    gap: 2rem;
+    gap: 1.8rem;
   }
   .header__search {
     width: auto;
