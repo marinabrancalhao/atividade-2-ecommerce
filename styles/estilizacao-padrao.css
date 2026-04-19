@@ -211,6 +211,9 @@ input:focus {
     font-size: small;
   }
   .btn--subscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
   }
 }
