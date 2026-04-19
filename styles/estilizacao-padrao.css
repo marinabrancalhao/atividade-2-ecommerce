@@ -206,4 +206,7 @@ input:focus {
   .header__categories-item a {
     font-size: small;
   }
+  .btn--subscription {
+    padding: 1rem;
+  }
 }
