@@ -83,7 +83,7 @@ input:focus {
 .header__categories-list {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2zzrem;
 }
 
 .header__categories-item a {
