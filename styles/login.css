@@ -94,11 +94,30 @@ main {
   }
 
   .banner__title {
+    text-align: center;
     width: 100%;
+    font-size: 1.4rem;
   }
 
   .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 1rem;
+  }
+
+  .login__details {
+    margin: 0;
+  }
+
+  .login__details label {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .login__input {
+    width: 100%;
+    margin: auto;
   }
 }

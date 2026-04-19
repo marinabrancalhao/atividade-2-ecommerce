@@ -83,7 +83,7 @@ input:focus {
 .header__categories-list {
   display: flex;
   list-style: none;
-  gap: 2zzrem;
+  gap: 2rem;
 }
 
 .header__categories-item a {
@@ -188,6 +188,10 @@ input:focus {
     width: 100%;
     min-height: 100vh;
   }
+
+  .header__icons-list {
+    gap: 2rem;
+  }
   .header__search {
     width: auto;
   }
@@ -200,7 +204,7 @@ input:focus {
   }
 
   .header__categories-list {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .header__categories-item a {
