@@ -90,6 +90,10 @@ input:focus {
   border-radius: 50%;
 }
 
+.categories__bg:hover {
+  background-color: var(--accent-color);
+}
+
 .categories__img {
   height: 60px;
   width: auto;

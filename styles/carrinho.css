@@ -59,12 +59,13 @@
   margin-right: auto;
 }
 
-.basket-item__quantity {
+.basket-item__controls {
   display: flex;
   align-items: center;
 }
 
-.basket-item__button {
+.basket-item__minus,
+.basket-item__plus {
   margin: 0.5rem;
   font-size: 20px;
   border: none;

@@ -79,15 +79,17 @@
 
           <div class="basket-item__details">
             <h3>Alface</h3>
-            <span>R$ 7,50 <small>/un</small></span>
+            <span class="basket-item__unit-price"
+              >R$ 7,50<small> /kg</small></span
+            >
           </div>
 
-          <div class="basket-item__quantity">
-            <button class="basket-item__button">
+          <div class="basket-item__controls">
+            <button class="basket-item__minus">
               <img src="./images/icons8-minus-24.png" alt="" />
             </button>
-            <span>1</span>
-            <button class="basket-item__button">
+            <span class="basket-item__quantity">1 kg</span>
+            <button class="basket-item__plus">
               <img src="./images/icons8-plus-24.png" alt="" />
             </button>
           </div>
@@ -104,15 +106,17 @@
 
           <div class="basket-item__details">
             <h3>Tomate</h3>
-            <span>R$ 14,00<small>/kg</small></span>
+            <span class="basket-item__unit-price"
+              >R$ 14,00<small>/kg</small></span
+            >
           </div>
 
-          <div class="basket-item__quantity">
-            <button class="basket-item__button">
+          <div class="basket-item__controls">
+            <button class="basket-item__minus">
               <img src="./images/icons8-minus-24.png" alt="" />
             </button>
-            <span>1</span>
-            <button class="basket-item__button">
+            <span class="basket-item__quantity">1 kg</span>
+            <button class="basket-item__plus">
               <img src="./images/icons8-plus-24.png" alt="" />
             </button>
           </div>
@@ -129,15 +133,18 @@
 
           <div class="basket-item__details">
             <h3>Cenoura</h3>
-            <span>R$ 10,50 <small>/kg</small></span>
+
+            <span class="basket-item__unit-price"
+              >R$ 10,50 <small>/kg</small></span
+            >
           </div>
 
-          <div class="basket-item__quantity">
-            <button class="basket-item__button">
+          <div class="basket-item__controls">
+            <button class="basket-item__minus">
               <img src="./images/icons8-minus-24.png" alt="" />
             </button>
-            <span>1</span>
-            <button class="basket-item__button">
+            <span class="basket-item__quantity">1 kg</span>
+            <button class="basket-item__plus">
               <img src="./images/icons8-plus-24.png" alt="" />
             </button>
           </div>
@@ -154,15 +161,17 @@
 
           <div class="basket-item__details">
             <h3>Manga</h3>
-            <span>R$ 12,00 <small>/kg</small></span>
+            <span class="basket-item__unit-price"
+              >R$ 12,00 <small>/kg</small></span
+            >
           </div>
 
-          <div class="basket-item__quantity">
-            <button class="basket-item__button">
+          <div class="basket-item__controls">
+            <button class="basket-item__minus">
               <img src="./images/icons8-minus-24.png" alt="" />
             </button>
-            <span>1</span>
-            <button class="basket-item__button">
+            <span class="basket-item__quantity">1 kg</span>
+            <button class="basket-item__plus">
               <img src="./images/icons8-plus-24.png" alt="" />
             </button>
           </div>
@@ -190,12 +199,14 @@
 
         <div class="basket__summary-line">
           <span> Itens (<span id="basket__count">4</span>) </span>
-          <span class="basket__value">R$ 44,00</span>
+          <span class="basket__value" id="basket__total-products"
+            >R$ 44,00</span
+          >
         </div>
 
         <div class="basket__summary-line">
           <span>Desconto</span>
-          <span class="basket__value">- R$ 8,80</span>
+          <span class="basket__value">- R$ 8,00</span>
         </div>
 
         <div class="basket__summary-line">
@@ -218,5 +229,7 @@
         <p>Desenvolvido por Marina Brancalhão</p></small
       >
     </footer>
+    <script src="./scripts/carrinho.js"></script>
+    <script src="./scripts/script-padrao.js"></script>
   </body>
 </html>

@@ -76,7 +76,6 @@ input:focus {
 }
 .header__categories {
   display: flex;
-  padding: 1rem;
   background-color: var(--primary-color);
   justify-content: center;
 }
@@ -89,11 +88,18 @@ input:focus {
 
 .header__categories-item a {
   display: block;
+  padding: 0.8rem 0.5rem;
+  height: 100%;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: var(--surface-color);
   font-weight: bold;
+}
+
+.header__categories-item a:hover {
+  background-color: var(--accent-color);
+  color: var(--surface-color);
 }
 
 /* Estilização do Footer */
@@ -169,6 +175,11 @@ input:focus {
 
 .btn--basket:hover {
   background-color: #6b863c;
+}
+
+.header__categories-item.active a {
+  background-color: var(--accent-color);
+  color: var(--surface-color);
 }
 
 /* Media Query */
