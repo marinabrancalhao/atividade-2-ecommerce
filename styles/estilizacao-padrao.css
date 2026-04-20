@@ -217,12 +217,7 @@ input:focus {
     width: auto;
   }
   .header__search input {
-    width: 0;
-    opacity: 0;
-  }
-
-  .header__search img {
-    position: absolute;
+    display: none;
   }
 
   .header__categories-list {
