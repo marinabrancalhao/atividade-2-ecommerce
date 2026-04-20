@@ -56,10 +56,9 @@
   font-size: 1rem;
 }
 
-input:focus {
-  outline: none;
+.subscription__input:focus {
+  outline: 2px solid var(--primary-color);
 }
-
 /* Estilização da Section Categories */
 .categories {
   display: flex;
@@ -130,6 +129,10 @@ input:focus {
   .subscription__input {
     padding: 0.8rem;
     font-size: 14px;
+  }
+
+  .subscription__input:focus {
+    outline: 2px solid var(--accent-color);
   }
 
   /* Media Query da Section Categories */
