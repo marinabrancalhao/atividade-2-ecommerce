@@ -1,4 +1,10 @@
 /* Estilização da Section Products */
+.products__title {
+  margin: 1.5rem 0 0rem 0;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Coustard", serif;
+}
 .products {
   display: flex;
   flex-wrap: wrap;
