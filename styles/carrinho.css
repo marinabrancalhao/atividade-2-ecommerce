@@ -1,11 +1,11 @@
 .basket {
   display: flex;
+  align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
 }
 
-/* Estilização da section basket__itens */
-
+/* Estilização da seção de itens do carrinho */
 .basket__items {
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   border: none;
   padding: 0.6rem;
   border-radius: 50px;
-  font-size: rem;
+  font-size: 0.8rem;
 }
 
 .basket__title {
@@ -47,7 +47,7 @@
   padding: 1.5rem;
   border-radius: 24px;
   color: var(--surface-color);
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .basket-item__image {
@@ -75,10 +75,6 @@
   height: 24px;
 }
 
-.basket-item__number {
-  margin-right: 0.3rem;
-}
-
 .basket-item__total-price {
   font-weight: 700;
 }
@@ -89,7 +85,7 @@
   cursor: pointer;
 }
 
-/* Estilização da Section basket__summary */
+/* Estilização da secção de resumo da compra */
 .basket__summary {
   display: flex;
   flex-direction: column;
@@ -150,11 +146,11 @@
 
     gap: 1rem;
     align-items: center;
-    justify-content: center;
 
     background-color: var(--accent-color);
     padding: 1rem;
     border-radius: 24px;
+    font-size: 0.9rem;
   }
 
   .basket-item__image {
@@ -171,7 +167,7 @@
     font-weight: 600;
   }
 
-  .basket-item__quantity {
+  .basket-item__controls {
     grid-area: quantity;
   }
 

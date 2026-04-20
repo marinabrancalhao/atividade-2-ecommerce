@@ -11,6 +11,7 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
@@ -22,11 +23,12 @@
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="" />
-            <input type="text" placeholder="Pesquisar" />
+            <img src="./images/icons8-search-24.png" alt="" aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
             <ul class="header__icons-list">
               <li class="header__icons-item">
                 <a href="./login.html">
@@ -47,13 +49,14 @@
                 </a>
               </li>
             </ul>
-          </div>
+
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
-              <a href="index.html">Início</a>
+              <a href="index.html" aria-current="page">Início</a>
             </li>
             <li class="header__categories-item">
               <a href="frutas.html">Frutas</a>
@@ -73,6 +76,7 @@
     </header>
 
     <main>
+      <!-- banner inscrição do email -->
       <section class="subscription">
         <div class="subscription__content">
           <h2>Os melhores Produtos</h2>
@@ -80,14 +84,16 @@
           <p class="subscription__text">
             Ganhe 20% de desconto na primeira compra!
           </p>
-          <div class="subscription__email">
+          <form class="subscription__email">
+            <label for="email" class="sr-only">Digite seu email</label>
             <input
+            id="email"
               class="subscription__input"
               type="email"
               placeholder="Insira seu email aqui"
             />
-            <button class="btn btn--subscription">Enviar</button>
-          </div>
+            <button class="btn btn--subscription" type="submit">Enviar</button>
+          </form>
         </div>
 
         <img
@@ -97,58 +103,33 @@
         />
       </section>
 
+      <!-- menu visual categorias -->
       <section class="categories">
+      <a href="./frutas.html" class="categories__link">
         <div class="categories__card">
-          <a class="categories__link-img" href="./frutas.html">
-            <div class="categories__bg">
-              <img
-                class="categories__img"
-                src="./images/icons8-strawberry-100.png"
-                alt=""
-              />
-            </div>
-          </a>
-
-          <a class="categories__link-name" href="./frutas.html"
-            ><h2 class="categories__name">Frutas</h2></a
-          >
+          <img src="./images/icons8-strawberry-100.png" class="categories__img" alt="" aria-hidden="true">
         </div>
+        <h2 class="categories__name">Frutas</h2>
+      </a>
 
+      <a href="./vegetais.html" class="categories__link">
         <div class="categories__card">
-          <a class="categories__link-img" href="./vegetais.html">
-            <div class="categories__bg">
-              <img
-                class="categories__img"
-                src="./images/icons8-broccoli-100.png"
-                alt=""
-              />
-            </div>
-          </a>
-
-          <a class="categories__link-name" href="./vegetais.html"
-            ><h2 class="categories__name">Vegetais</h2></a
-          >
+          <img src="./images/icons8-broccoli-100.png" class="categories__img" alt="" aria-hidden="true">
         </div>
+        <h2 class="categories__name">Vegetais</h2>
+      </a>
 
+      <a href="./bebidas.html" class="categories__link">
         <div class="categories__card">
-          <a class="categories__link-img" href="./bebidas.html">
-            <div class="categories__bg">
-              <img
-                class="categories__img"
-                src="./images/icons8-orange-juice-100.png"
-                alt=""
-              />
-            </div>
-          </a>
-
-          <a class="categories__link-name" href="./bebidas.html"
-            ><h2 class="categories__name">Bebidas</h2></a
-          >
+          <img src="./images/icons8-orange-juice-100.png" class="categories__img" alt="" aria-hidden="true">
         </div>
-      </section>
+        <h2 class="categories__name">Bebidas</h2>
+      </a>
+    </section>
 
+      <!-- cards de produtos-->
       <section class="products">
-        <div class="products__card">
+        <article class="products__card">
           <img
             class="products__image"
             src="./images/abacate.png"
@@ -159,30 +140,30 @@
             <p class="products__price">R$ 12,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar abacate à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img class="products__image" src="./images/manga.png" alt="Manga" />
           <div class="products__info">
             <h3>Manga</h3>
             <p class="products__price">R$ 12,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar manga à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img
             class="products__image"
             src="./images/abacaxi.png"
@@ -193,15 +174,15 @@
             <p class="products__price">R$ 9,50 <small>/un</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar abacaxi à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img
             class="products__image"
             src="./images/morango.png"
@@ -212,15 +193,15 @@
             <p class="products__price">R$ 18,00 <small>/cx</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar morango à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img
             class="products__image"
             src="./images/laranja.png"
@@ -231,45 +212,45 @@
             <p class="products__price">R$ 13,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar laranja à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img class="products__image" src="./images/alface.png" alt="Alface" />
           <div class="products__info">
             <h3>Alface</h3>
             <p class="products__price">R$ 7,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar alface à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img class="products__image" src="./images/tomate.png" alt="Tomate" />
           <div class="products__info">
             <h3>Tomate</h3>
             <p class="products__price">R$ 14,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar tomate à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img
             class="products__image"
             src="./images/cenoura.png"
@@ -280,28 +261,28 @@
             <p class="products__price">R$ 10,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar cenoura à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
-        <div class="products__card">
+        <article class="products__card">
           <img class="products__image" src="./images/batata.png" alt="Batata" />
           <div class="products__info">
             <h3>Batata</h3>
             <p class="products__price">R$ 11,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar batata à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
 
         <div class="products__card">
           <img
@@ -314,21 +295,22 @@
             <p class="products__price">R$ 12,00 <small>/un</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button class="btn btn--add" type="button" aria-label="Adicionar brócolis à cesta">
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
             />Adicionar à cesta
           </button>
-        </div>
+        </article>
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
-      <small
-        ><p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small>Desenvolvido por Marina Brancalhão</small></p>
+      
     </footer>
     <script src="./scripts/script-padrao.js"></script>
   </body>

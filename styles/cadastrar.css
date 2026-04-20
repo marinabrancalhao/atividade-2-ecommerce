@@ -70,6 +70,11 @@ main {
   border: none;
 }
 
+.register__input:focus {
+  outline: 2px solid var(--bg-color);
+  outline-offset: 2px;
+}
+
 /* Media Query */
 @media screen and (max-width: 480px) {
   main {

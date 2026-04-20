@@ -10,49 +10,51 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
             ><img
-              class="header_logo"
+              class="header__logo"
               src="./images/logotipo.png"
               alt="Logotipo da marca Clique & Colha"
               width="200"
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="Pesquisar" />
-            <input type="text" placeholder="Pesquisar" />
+            <img src="./images/icons8-search-24.png" alt="" aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
-            <ul class="header__icons-list">
-              <li class="header__icons-item">
-                <a href="./login.html">
-                  <img
-                    src="./images/icons8-user-24.png"
-                    title="Minha conta"
-                    alt="Usuário"
-                  />
-                </a>
-              </li>
-              <li class="header__icons-item">
-                <a href="./carrinho.html">
-                  <img
-                    src="./images/icons8-basket-24.png"
-                    title="Minha cesta"
-                    alt="Cesta"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a href="./login.html">
+                <img
+                  src="./images/icons8-user-24.png"
+                  title="Minha conta"
+                  alt="Minha conta"
+                />
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="./carrinho.html" aria-current="page">
+                <img
+                  src="./images/icons8-basket-24.png"
+                  title="Minha cesta"
+                  alt="Cesta"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
-              <a href="index.html">Início</a>
+              <a href="index.html" aria-current="page">Início</a>
             </li>
             <li class="header__categories-item">
               <a href="frutas.html">Frutas</a>
@@ -72,10 +74,15 @@
     </header>
 
     <main class="basket">
+      <!-- Itens da cesta -->
       <section class="basket__items">
-        <h2 class="basket__title">Cesta de Compras</h2>
-        <div class="basket-item">
-          <img src="./images/alface.png" class="basket-item__image" />
+        <h1 class="basket__title">Cesta de Compras</h1>
+        <article class="basket-item">
+          <img
+            src="./images/alface.png"
+            class="basket-item__image"
+            alt="Alface"
+          />
 
           <div class="basket-item__details">
             <h3>Alface</h3>
@@ -85,24 +92,36 @@
           </div>
 
           <div class="basket-item__controls">
-            <button class="basket-item__minus">
-              <img src="./images/icons8-minus-24.png" alt="" />
+            <button class="basket-item__minus" aria-label="Diminuir quantidade">
+              <img
+                src="./images/icons8-minus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
             <span class="basket-item__quantity">1 kg</span>
-            <button class="basket-item__plus">
-              <img src="./images/icons8-plus-24.png" alt="" />
+            <button class="basket-item__plus" aria-label="Aumentar quantidade">
+              <img
+                src="./images/icons8-plus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
           </div>
 
           <span class="basket-item__total-price">R$ 7,50</span>
 
-          <button class="basket-item__remove">
-            <img src="./images/icons8-trash-24.png" alt="" />
+          <button class="basket-item__remove" aria-label="Remover item">
+            <img src="./images/icons8-trash-24.png" alt="" aria-hidden="true" />
           </button>
-        </div>
+        </article>
 
-        <div class="basket-item">
-          <img src="./images/tomate.png" class="basket-item__image" />
+        <article class="basket-item">
+          <img
+            src="./images/tomate.png"
+            class="basket-item__image"
+            alt="Tomate"
+          />
 
           <div class="basket-item__details">
             <h3>Tomate</h3>
@@ -112,24 +131,36 @@
           </div>
 
           <div class="basket-item__controls">
-            <button class="basket-item__minus">
-              <img src="./images/icons8-minus-24.png" alt="" />
+            <button class="basket-item__minus" aria-label="Diminuir quantidade">
+              <img
+                src="./images/icons8-minus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
             <span class="basket-item__quantity">1 kg</span>
-            <button class="basket-item__plus">
-              <img src="./images/icons8-plus-24.png" alt="" />
+            <button class="basket-item__plus" aria-label="Aumentar quantidade">
+              <img
+                src="./images/icons8-plus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
           </div>
 
           <span class="basket-item__total-price">R$ 14,00</span>
 
-          <button class="basket-item__remove">
-            <img src="./images/icons8-trash-24.png" alt="" />
+          <button class="basket-item__remove" aria-label="Remover item">
+            <img src="./images/icons8-trash-24.png" alt="" aria-hidden="true" />
           </button>
-        </div>
+        </article>
 
-        <div class="basket-item">
-          <img src="./images/cenoura.png" class="basket-item__image" />
+        <article class="basket-item">
+          <img
+            src="./images/cenoura.png"
+            class="basket-item__image"
+            alt="Cenoura"
+          />
 
           <div class="basket-item__details">
             <h3>Cenoura</h3>
@@ -140,24 +171,36 @@
           </div>
 
           <div class="basket-item__controls">
-            <button class="basket-item__minus">
-              <img src="./images/icons8-minus-24.png" alt="" />
+            <button class="basket-item__minus" aria-label="Diminuir quantidade">
+              <img
+                src="./images/icons8-minus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
             <span class="basket-item__quantity">1 kg</span>
-            <button class="basket-item__plus">
-              <img src="./images/icons8-plus-24.png" alt="" />
+            <button class="basket-item__plus" aria-label="Aumentar quantidade">
+              <img
+                src="./images/icons8-plus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
           </div>
 
           <span class="basket-item__total-price">R$ 10,50</span>
 
-          <button class="basket-item__remove">
-            <img src="./images/icons8-trash-24.png" alt="" />
+          <button class="basket-item__remove" aria-label="Remover item">
+            <img src="./images/icons8-trash-24.png" alt="" aria-hidden="true" />
           </button>
-        </div>
+        </article>
 
-        <div class="basket-item">
-          <img src="./images/manga.png" class="basket-item__image" />
+        <article class="basket-item">
+          <img
+            src="./images/manga.png"
+            class="basket-item__image"
+            alt="Manga"
+          />
 
           <div class="basket-item__details">
             <h3>Manga</h3>
@@ -167,25 +210,36 @@
           </div>
 
           <div class="basket-item__controls">
-            <button class="basket-item__minus">
-              <img src="./images/icons8-minus-24.png" alt="" />
+            <button class="basket-item__minus" aria-label="Diminuir quantidade">
+              <img
+                src="./images/icons8-minus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
             <span class="basket-item__quantity">1 kg</span>
-            <button class="basket-item__plus">
-              <img src="./images/icons8-plus-24.png" alt="" />
+            <button class="basket-item__plus" aria-label="Aumentar quantidade">
+              <img
+                src="./images/icons8-plus-24.png"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
           </div>
 
           <span class="basket-item__total-price">R$ 12,00</span>
 
-          <button class="basket-item__remove">
-            <img src="./images/icons8-trash-24.png" alt="" />
+          <button class="basket-item__remove" aria-label="Remover item">
+            <img src="./images/icons8-trash-24.png" alt="" aria-hidden="true" />
           </button>
-        </div>
+        </article>
       </section>
 
+      <!-- resumo da compra -->
       <section class="basket__summary">
-        <span class="basket__coupon">
+        <form class="basket__coupon">
+          <!-- cupom de desconto -->
+          <label for="coupon" class="sr-only"></label>
           <input
             class="basket__input"
             id="coupon"
@@ -193,8 +247,8 @@
             placeholder="Adicione um cupom de desconto"
           />
 
-          <button class="btn btn--subscription">OK</button></span
-        >
+          <button class="btn btn--subscription" type="submit">OK</button>
+        </form>
         <h2 class="basket__summary-title">Resumo da Cesta</h2>
 
         <div class="basket__summary-line">
@@ -224,10 +278,8 @@
     </main>
 
     <footer class="footer">
-      <small
-        ><p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small></small>Desenvolvido por Marina Brancalhão</small></p>
     </footer>
     <script src="./scripts/carrinho.js"></script>
     <script src="./scripts/script-padrao.js"></script>

@@ -10,6 +10,7 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
@@ -21,38 +22,42 @@
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="Pesquisar" />
-            <input type="text" placeholder="Pesquisar" />
+            <img
+              src="./images/icons8-search-24.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
-            <ul class="header__icons-list">
-              <li class="header__icons-item">
-                <a href="./login.html">
-                  <img
-                    src="./images/icons8-user-24.png"
-                    title="Minha conta"
-                    alt="Usuário"
-                  />
-                </a>
-              </li>
-              <li class="header__icons-item">
-                <a href="./carrinho.html">
-                  <img
-                    src="./images/icons8-basket-24.png"
-                    title="Minha cesta"
-                    alt="Cesta"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a href="./login.html">
+                <img
+                  src="./images/icons8-user-24.png"
+                  title="Minha conta"
+                  alt="Minha conta"
+                />
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="./carrinho.html">
+                <img
+                  src="./images/icons8-basket-24.png"
+                  title="Minha cesta"
+                  alt="Cesta"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
-              <a href="index.html">Início</a>
+              <a href="index.html" aria-current="page">Início</a>
             </li>
             <li class="header__categories-item">
               <a href="frutas.html">Frutas</a>
@@ -63,7 +68,6 @@
             <li class="header__categories-item">
               <a href="bebidas.html">Bebidas</a>
             </li>
-
             <li class="header__categories-item">
               <a href="sobre.html">Sobre</a>
             </li>
@@ -71,6 +75,7 @@
         </section>
       </nav>
     </header>
+
     <main>
       <section class="register">
         <h1 class="register__title">Cadastro de Cliente</h1>
@@ -215,10 +220,8 @@
     </main>
 
     <footer class="footer">
-      <small
-        ><p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small>Desenvolvido por Marina Brancalhão</small></p>
     </footer>
     <script src="./scripts/script-padrao.js"></script>
     <script src="./scripts/cadastrar.js"></script>

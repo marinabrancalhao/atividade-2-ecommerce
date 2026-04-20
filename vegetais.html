@@ -10,6 +10,7 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
@@ -21,34 +22,38 @@
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="" />
-            <input type="text" placeholder="Pesquisar" />
+            <img
+              src="./images/icons8-search-24.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
-            <ul class="header__icons-list">
-              <li class="header__icons-item">
-                <a href="./login.html">
-                  <img
-                    src="./images/icons8-user-24.png"
-                    title="Minha conta"
-                    alt="Minha conta"
-                  />
-                </a>
-              </li>
-              <li class="header__icons-item">
-                <a href="./carrinho.html">
-                  <img
-                    src="./images/icons8-basket-24.png"
-                    title="Minha cesta"
-                    alt="Cesta"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a href="./login.html">
+                <img
+                  src="./images/icons8-user-24.png"
+                  title="Minha conta"
+                  alt="Minha conta"
+                />
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="./carrinho.html">
+                <img
+                  src="./images/icons8-basket-24.png"
+                  title="Minha cesta"
+                  alt="Cesta"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
@@ -58,7 +63,7 @@
               <a href="frutas.html">Frutas</a>
             </li>
             <li class="header__categories-item">
-              <a href="vegetais.html">Vegetais</a>
+              <a href="vegetais.html" aria-current="page">Vegetais</a>
             </li>
             <li class="header__categories-item">
               <a href="bebidas.html">Bebidas</a>
@@ -72,6 +77,8 @@
     </header>
 
     <main>
+      <h1 class="products__title">Vegetais</h1>
+      <!-- cards de produtos -->
       <section class="products">
         <div class="products__card">
           <img
@@ -84,7 +91,11 @@
             <p class="products__price">R$ 12,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar abobrinha à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -99,7 +110,11 @@
             <p class="products__price">R$ 7,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar alface à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -114,7 +129,11 @@
             <p class="products__price">R$ 11,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar batata à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -133,7 +152,11 @@
             <p class="products__price">R$ 9,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar beterraba à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -152,7 +175,11 @@
             <p class="products__price">R$ 12,00 <small>/un</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar brócolis à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -167,7 +194,11 @@
             <p class="products__price">R$ 9,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar cebola à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -186,7 +217,11 @@
             <p class="products__price">R$ 10,50 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar cenoura à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -205,7 +240,11 @@
             <p class="products__price">R$ 6,00 <small>/maço</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar espinafre à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -224,7 +263,11 @@
             <p class="products__price">R$ 7,00 <small>/un</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar pimentão à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -239,7 +282,11 @@
             <p class="products__price">R$ 14,00 <small>/kg</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar tomate à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -249,11 +296,10 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
-      <small>
-        <p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small>Desenvolvido por Marina Brancalhão</small></p>
     </footer>
     <script src="./scripts/script-padrao.js"></script>
   </body>

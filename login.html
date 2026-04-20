@@ -10,45 +10,50 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
             ><img
-              class="header_logo"
+              class="header__logo"
               src="./images/logotipo.png"
               alt="Logotipo da marca Clique & Colha"
               width="200"
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="" />
-            <input type="text" placeholder="Pesquisar" />
+            <img
+              src="./images/icons8-search-24.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
-            <ul class="header__icons-list">
-              <li class="header__icons-item">
-                <a href="./login.html">
-                  <img
-                    src="./images/icons8-user-24.png"
-                    title="Minha conta"
-                    alt="Minha conta"
-                  />
-                </a>
-              </li>
-              <li class="header__icons-item">
-                <a href="./carrinho.html">
-                  <img
-                    src="./images/icons8-basket-24.png"
-                    title="Minha cesta"
-                    alt="Cesta"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a href="./login.html" aria-current="page">
+                <img
+                  src="./images/icons8-user-24.png"
+                  title="Minha conta"
+                  alt="Minha conta"
+                />
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="./carrinho.html">
+                <img
+                  src="./images/icons8-basket-24.png"
+                  title="Minha cesta"
+                  alt="Cesta"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
@@ -86,6 +91,7 @@
             type="email"
             name="email"
             placeholder="seuemail@email.com"
+            required
           />
           <label for="login__senha">Senha</label>
           <input
@@ -94,10 +100,10 @@
             type="password"
             name="senha"
             placeholder="Sua senha"
+            required
           />
+          <button class="btn btn--submit" type="submit">Entrar</button>
         </form>
-
-        <button class="btn btn--submit" type="submit">Entrar</button>
 
         <p class="login__new">
           Não tem conta ainda? <a href="./cadastrar.html">Crie agora</a>
@@ -105,11 +111,10 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
-      <small
-        ><p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small>Desenvolvido por Marina Brancalhão</small></p>
     </footer>
     <script src="./scripts/script-padrao.js"></script>
   </body>

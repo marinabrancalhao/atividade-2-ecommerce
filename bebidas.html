@@ -10,45 +10,50 @@
 
   <body>
     <header class="header">
+      <!-- menu logo e ícones -->
       <nav class="header__nav">
         <section class="header__top">
           <a href="./index.html"
             ><img
-              class="header_logo"
+              class="header__logo"
               src="./images/logotipo.png"
               alt="Logotipo da marca Clique & Colha"
               width="200"
             />
           </a>
           <div class="header__search">
-            <img src="./images/icons8-search-24.png" alt="" />
-            <input type="text" placeholder="Pesquisar" />
+            <img
+              src="./images/icons8-search-24.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <label for="search" class="sr-only">Pesquisar produtos</label>
+            <input id="search" type="text" placeholder="Pesquisar" />
           </div>
 
-          <div>
-            <ul class="header__icons-list">
-              <li class="header__icons-item">
-                <a href="./login.html">
-                  <img
-                    src="./images/icons8-user-24.png"
-                    title="Minha conta"
-                    alt="Minha conta"
-                  />
-                </a>
-              </li>
-              <li class="header_icons-item">
-                <a href="./carrinho.html">
-                  <img
-                    src="./images/icons8-basket-24.png"
-                    title="Minha cesta"
-                    alt="Cesta"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a href="./login.html">
+                <img
+                  src="./images/icons8-user-24.png"
+                  title="Minha conta"
+                  alt="Minha conta"
+                />
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="./carrinho.html">
+                <img
+                  src="./images/icons8-basket-24.png"
+                  title="Minha cesta"
+                  alt="Cesta"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
 
+        <!-- menu categorias -->
         <section class="header__categories">
           <ul class="header__categories-list">
             <li class="header__categories-item">
@@ -61,7 +66,7 @@
               <a href="vegetais.html">Vegetais</a>
             </li>
             <li class="header__categories-item">
-              <a href="bebidas.html">Bebidas</a>
+              <a href="bebidas.html" aria-current="page">Bebidas</a>
             </li>
             <li class="header__categories-item">
               <a href="sobre.html">Sobre</a>
@@ -72,6 +77,8 @@
     </header>
 
     <main>
+      <h1 class="products__title">Bebidas</h1>
+      <!-- cards de produtos -->
       <section class="products">
         <div class="products__card">
           <img
@@ -84,7 +91,11 @@
             <p class="products__price">R$ 14,00 <small>/un</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar água de coco à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -96,14 +107,18 @@
           <img
             class="products__image"
             src="./images/suco-limao.png"
-            alt="Copos de limonada com limões em volta"
+            alt="Copos de limonada"
           />
           <div class="products__info">
             <h3>Limonada</h3>
             <p class="products__price">R$ 12,90 <small>/1L</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar limonada à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -115,14 +130,18 @@
           <img
             class="products__image"
             src="./images/suco-abacaxi.png"
-            alt="Copo de suco de abacaxi e um abacaxi picado"
+            alt="Copo de suco de abacaxi"
           />
           <div class="products__info">
             <h3>Suco de Abacaxi</h3>
             <p class="products__price">R$ 15,50 <small>/1L</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar suco de abacaxi à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -134,14 +153,18 @@
           <img
             class="products__image"
             src="./images/suco-detox.png"
-            alt="Copo de suco de beterraba e beterraba picada"
+            alt="Copo de suco de beterraba"
           />
           <div class="products__info">
             <h3>Suco Detox</h3>
             <p class="products__price">R$ 15,00 <small>/1L</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar suco de beterraba à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -152,15 +175,19 @@
         <div class="products__card">
           <img
             class="products__image"
-            src="./images/suco-maca.png"
-            alt="Copos de suco de maçã e maça picada"
+            src="./images/suco-maca.png "
+            alt="Copos de suco de maçã"
           />
           <div class="products__info">
             <h3>Suco de Maçã</h3>
             <p class="products__price">R$ 19,90 <small>/1L</small></p>
           </div>
 
-          <button class="btn btn--add">
+          <button
+            class="btn btn--add"
+            type="button"
+            aria-label="Adicionar suco de maçã à cesta"
+          >
             <img
               src="./images/icons8-add-to-shopping-basket-24.png"
               alt=""
@@ -170,11 +197,10 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
-      <small>
-        <p>&copy; 2026 Clique & Colha</p>
-        <p>Desenvolvido por Marina Brancalhão</p></small
-      >
+      <p><small>&copy; 2026 Clique & Colha</small></p>
+      <p><small>Desenvolvido por Marina Brancalhão</small></p>
     </footer>
     <script src="./scripts/script-padrao.js"></script>
   </body>

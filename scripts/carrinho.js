@@ -119,21 +119,3 @@ function calcularTotalPedido() {
 
   valorTotalPedido.textContent = formatarPreco(totalFinal);
 }
-// function calcularTotalPedido() {
-//   let totalProdutos = calcularTotalProdutos();
-//   let itens = document.querySelectorAll(".basket-item");
-
-//   if (itens.length === 0) {
-//     alert("O JS percebeu que a cesta está vazia!");
-//     valorTotalProdutos.textContent = formatarPreco(0);
-//     valorTotalPedido.textContent = formatarPreco(0);
-//     return;
-//   }
-
-//   alert("O JS ainda acha que tem " + itens.length + " itens.");
-//   let desconto = 8;
-//   let frete = 10;
-//   let totalFinal = totalProdutos - desconto + frete;
-
-//   valorTotalPedido.textContent = formatarPreco(totalFinal);
-// }

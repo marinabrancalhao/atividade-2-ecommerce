@@ -1,10 +1,21 @@
 /* Estilização do About */
-main {
+.about__container {
   display: flex;
   padding: 2rem;
   gap: 2rem;
 }
-.about h2 {
+
+.about {
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 12px;
+  color: var(--surface-color);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.about__title {
   font-family: "Coustard", serif;
   color: var(--bg-color);
   margin-bottom: 1rem;
@@ -16,19 +27,14 @@ main {
   margin-bottom: 1rem;
 }
 
-.about {
-  background-color: var(--accent-color);
-  padding: 2rem;
-  border-radius: 12px;
-  color: var(--surface-color);
-  text-align: justify;
-  font-size: 1rem;
-  line-height: 1.4rem;
-}
-
 /* Media Query */
 @media screen and (max-width: 480px) {
-  main {
+  .about__container {
     flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about {
+    padding: 1.5rem;
   }
 }
